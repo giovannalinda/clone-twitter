@@ -7,14 +7,12 @@ body,
 
 #app {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .box {
   width: 100px;
   height: 60px;
-  background: violet;
+  background: purple;
   margin: 5px;
-  flex-grow: 1;
-  flex-shrink: 2;
 }
