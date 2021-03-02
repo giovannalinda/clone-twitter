@@ -7,7 +7,10 @@ body,
 
 #app {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .box {
@@ -15,4 +18,5 @@ body,
   height: 60px;
   background: purple;
   margin: 5px;
+  flex-grow: 1;
 }
