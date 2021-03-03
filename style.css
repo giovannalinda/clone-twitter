@@ -1,22 +1,5 @@
-html,
-body,
-#app {
-  height: 100%;
-  margin: 0%;
-}
-
-#app {
-  display: flex;
-  flex-direction: row;
-
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.box {
-  width: 100px;
-  height: 60px;
-  background: purple;
-  margin: 5px;
-  flex-grow: 1;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
