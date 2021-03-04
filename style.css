@@ -16,12 +16,25 @@ input, button {
   outline: 0;
 }
 
+.content {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
 header#main-header {
+  height: 46px;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 1;
+}
+
+header#main-header .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 46px;
-  background: #fff;
+  height: 100%;
 }
 
 header#main-header nav ul {
@@ -60,13 +73,14 @@ header#main-header div.side {
 }
 
 header#main-header div.side input {
-  background: #F5F8FA;
+  width: 220px;
   border: 1px solid #E6ECF0;
   height: 34px;
-  padding: 0 12px;
+  padding: 0 30px 0 12px;
   border-radius: 16px;
   color: #667581;
   font-size: 12px;
+  background: #F5F8FA url("/images/search.svg") no-repeat 190px center;
 }
 
 header#main-header div.side button {
@@ -83,4 +97,60 @@ header#main-header div.side button {
   color: #fff;
   border: 0;
   border-radius: 16px;
+}
+
+div.banner {
+  height: 380px;
+  width: 100%;
+  background: #8A00FE;
+}
+
+div.bar {
+  height: 59px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+div.bar .content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 270px;
+  height: 100%;
+}
+
+div.bar .content ul {
+  display: flex;
+  list-style: none;
+}
+
+div.bar .content ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+  position: relative;
+}
+
+div.bar .content ul li.active::after {
+  content:'';
+  height:2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #8A00FE;
+}
+
+div.bar .content ul li span {
+  color: #667580;
+  font-size: 12px;
+  font-weight: bold;
+
+}
+
+div.bar .content ul li strong {
+  color: #8A00FE;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 2px;
 }
