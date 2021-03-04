@@ -16,4 +16,11 @@ header#main-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 46px;
+  background: #fff;
+}
+
+header#main-header nav ul {
+  display: flex;
+  list-style: none;
 }
