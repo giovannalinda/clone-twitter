@@ -260,6 +260,6 @@ div.wrapper-content aside.profile .followers ul {
 div.wrapper-content aside.profile .followers ul li {
   width: 48px;
   height: 48px;
-  border-color: #D0D5D9;
+  background: #D0D5D9;
   border-radius: 50%;
 }
