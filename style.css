@@ -21,6 +21,11 @@ input, button {
   margin: 0 auto;
   padding: 0 30px;
 }
+/*Lembrar de fixar o header junto com a rolagem da tela */
+/*header#main-header .content nav ul li:first-child div.side img input button {
+  position: fixed;
+
+}*/
 
 header#main-header {
   height: 46px;
@@ -100,7 +105,7 @@ header#main-header div.side button {
 }
 
 div.banner {
-  height: 380px;
+  height: 200px;
   width: 100%;
   background: #8A00FE;
 }
@@ -175,6 +180,7 @@ div.bar .content .actions button {
 
   width: 90px;
   font-weight: bold;
+  background: #fff;
   font-size: 14px;
   color: #8A00FE;
   border: 1px solid #8A00FE;
@@ -289,7 +295,98 @@ div.wrapper-content aside.profile .images ul {
 
  div.wrapper-content .timeline {
   flex: 1;
+  background: #fff;
+  margin: 10px 20px 0;
+
  }
+
+ div.wrapper-content .timeline nav {
+  border-bottom: 1px solid #E6ECF0;
+  padding: 10px 15px;
+  
+ }
+
+ div.wrapper-content .timeline nav a {
+  text-decoration: none;
+  color:#8A00FE;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+ }
+
+ div.wrapper-content .timeline nav a:first-child {
+   margin: 0;
+ }
+
+ div.wrapper-content .timeline nav a.active {
+   color: #1F2226;
+ }
+
+ div.wrapper-content .timeline ul.tweets {
+  list-style: none; 
+ }
+
+ div.wrapper-content .timeline ul.tweets li {
+  border-bottom: 1px solid #E6ECF0;
+  padding: 10px 15px;
+  display: flex;
+ }
+
+ div.wrapper-content .timeline ul.tweets li > img {
+   border-radius: 50%;
+   width: 48px;
+   height: 48px;
+ }
+
+ div.wrapper-content .timeline ul.tweets li .info {
+   margin-left: 10px;
+   display: flex;
+   flex-direction: column;
+ }
+
+ div.wrapper-content .timeline ul.tweets li .info strong {
+    font-size: 14px;
+    color: #1f2326;
+}
+
+div.wrapper-content .timeline ul.tweets li .info strong span {
+    font-size: 13px;
+    color: #7B8B9A;
+    font-weight: normal;
+}
+
+div.wrapper-content .timeline ul.tweets li .info p {
+  font-size: 14px;
+  color: #1f2326;
+  margin-top: 5px;
+}
+
+div.wrapper-content .timeline ul.tweets li .info p.Translation {
+  color: #8A00FE;
+}
+
+div.wrapper-content .timeline ul.tweets li .actions {
+  display: flex;
+  margin-top: 20px;
+}
+
+div.wrapper-content .timeline ul.tweets li .actions a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #667580;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 30px;
+}
+
+div.wrapper-content .timeline ul.tweets li .actions a:first-child {
+  margin-left: 0;
+}
+
+div.wrapper-content .timeline ul.tweets li .actions a img {
+  margin-right: 5px;
+}
 
  div.wrapper-content aside.widgets {
   width: 290px;
@@ -315,14 +412,89 @@ div.wrapper-content aside.profile .images ul {
   color: #8A00FE;
   font-size: 12px;
   text-decoration: none;
+  position: relative;
+  padding-left: 10px;
  }
 
  div.wrapper-content aside.widgets .widget .title a::before {
-   content: '';
+   content: "";
    width: 2px;
    height: 2px;
    border-radius: 50%;
-   margin-left: ;
+   background: #222;
+   position: absolute;
+   left: 4px;
+   top: 6px;
  }
 
+ div.wrapper-content aside.widgets .follow ul {
+  list-style: none;
+  margin-top: 10px;
+ }
+
+ div.wrapper-content aside.widgets .follow ul li {
+   display: flex;
+   justify-content:space-between;
+   border-bottom: 1px solid #CCD6DD;
+   padding-bottom: 10px;
+   margin-bottom: 10px;
+ }
+
+ div.wrapper-content aside.widgets .follow ul li:last-child {
+   margin-bottom: 0;
+   padding-bottom: 0;
+   border: 0;
+ }
+
+ div.wrapper-content aside.widgets .follow ul li .profile {
+   display: flex;
+   align-items: center;
+ }
+
+ div.wrapper-content aside.widgets .follow ul li .profile img {
+   border-radius: 50%;
+   height: 48px;
+   width: 48px;
+ }
+
+ div.wrapper-content aside.widgets .follow ul li .profile .info {
+   margin-left: 10px;
+   display: flex;
+   flex-direction: column;
+ }
+
+ div.wrapper-content aside.widgets .follow ul li .profile .info strong {
+   font-size: 14px;
+   color: #1f2326;
+ }
+
+ div.wrapper-content aside.widgets .follow ul li .profile .info strong span {
+   font-weight: normal;
+   color: #9a9a9a;
+ }
+
+ div.wrapper-content aside.widgets .follow ul li .profile .info button {
+  height: 27px;
+  margin-top: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content:center;
+ 
+  width: 90px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #8A00FE;
+  border: 1px solid #8A00FE;
+  border-radius: 16px;
+  background: #fff;
+ }
+
+ div.wrapper-content aside.widgets .follow ul li > a {
+  color: #CCD6DD;
+  text-decoration: none;
+  font-size: 14px;
+ }
+
+ 
 
