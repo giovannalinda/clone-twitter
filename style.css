@@ -92,7 +92,7 @@ header#main-header div.side input {
   border-radius: 16px;
   color: #667581;
   font-size: 12px;
-  background: #F5F8FA url("/images/search.svg") no-repeat 190px center;
+  background: url("/images/search.svg") no-repeat 190px center;
 }
 
 header#main-header div.side button {
