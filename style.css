@@ -196,6 +196,10 @@ div.bar .content .actions button {
   margin-right: 20px;
 }
 
+ button:hover {
+  filter: brightness( 93% );
+}
+
 div.wrapper-content {
   display: flex;
 }
